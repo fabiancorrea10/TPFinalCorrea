@@ -11,3 +11,4 @@ RUN chmod +777 *.sh *.txt
 
 ENTRYPOINT ./menu.sh *.txt
 
+
