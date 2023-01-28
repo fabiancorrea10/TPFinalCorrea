@@ -17,7 +17,6 @@ mas_Corta=0
 for P in $(cat $1)
 do
 	palabra=$(echo $P | tr -d ',.;:¡!¿?()')
-	mas_Corta=$palabra
 	[ ${#palabra} -le ${#mas_Corta} ] && mas_Corta=$palabra
 	[ ${#palabra} -ge ${#mas_Larga} ] && mas_Larga=$palabra
 	cant_Letras=$(( $cant_Letras + ${#palabra} ))
